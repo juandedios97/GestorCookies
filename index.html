@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Cookies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Gestor de Cookies</h1>
+        <p>Practica el almacenamiento con JavaScript.</p>
+
+        <form id="formCookie">
+            <label for="nombre">Nombre de la cookie</label>
+            <input type="text" id="nombre"
+                   placeholder="Ejemplo: usuario">
+
+            <label for="valor">Valor de la cookie</label>
+            <input type="text" id="valor"
+                   placeholder="Ejemplo: Juan">
+
+            <div class="botones">
+                <button type="submit">Crear cookie</button>
+                <button type="button" id="btnModificar">
+                    Modificar cookie
+                </button>
+                <button type="button" id="btnEliminar">
+                    Eliminar cookie
+                </button>
+            </div>
+        </form>
+
+        <p id="mensaje" role="status"></p>
+
+        <section>
+            <h2>Cookies almacenadas</h2>
+            <button type="button" id="btnLeer">
+                Leer cookies
+            </button>
+            <ul id="listaCookies"></ul>
+        </section>
+    </main>
+</body>
+</html>
